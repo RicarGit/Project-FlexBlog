@@ -8,12 +8,20 @@
   box-sizing: border-box;
 }
 
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
 /* SITE CONTAINER */
 .site-container {
   max-width: 960px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
+
 
 .top-info-bg {
   background-color: #122AB2;
@@ -29,6 +37,7 @@
 .top-info li a {
   color: #fff;
 }
+
 
 .menu-bg {
   background-color: #2C70FF;
@@ -59,12 +68,14 @@
   color: #122AB2;
 }
 
+
 .intro-title {
   padding: 60px 10px;
   font-size: 3em;
   font-weight: bold;
   line-height: 1;
 }
+
 
 .sobre {
   border-top: 2px solid #2c70ff;
@@ -90,6 +101,40 @@
   color: #7c7c7c;
 }
 .sobre-img {
-  flex: 1;
+  flex: 1 1 160px;
   margin: 0 10px
+}
+
+
+.products {
+  margin-bottom: 60px;
+}
+.products h1 {
+  margin-left: 10px;
+  font-size: 3em;
+  padding: 60px 0;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.products-item {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+.products-item h2 {
+  color: #a4a4a4;
+  font-size: 3em;
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+.purple {
+  border-top: 8px solid #ae81ff;
+}
+.red {
+  border-top: 8px solid #f9265e;
+}
+.blue {
+  border-top: 8px solid #66d9eb;
 }
