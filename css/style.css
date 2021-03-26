@@ -25,7 +25,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-
+/* TOP INFO */
 .top-info-bg {
   background-color: #122AB2;
 }
@@ -41,7 +41,7 @@ h1 {
   color: #fff;
 }
 
-
+/* MENU */
 .menu-bg {
   background-color: #2C70FF;
 }
@@ -71,7 +71,7 @@ h1 {
   color: #122AB2;
 }
 
-
+/* PAGE TITLE */
 .intro-title {
   padding: 60px 10px;
   font-size: 3em;
@@ -79,7 +79,7 @@ h1 {
   line-height: 1;
 }
 
-
+/* ABOUT US */
 .sobre {
   border-top: 2px solid #2c70ff;
   border-bottom: 2px solid #2c70ff;
@@ -108,7 +108,7 @@ h1 {
   margin: 0 10px
 }
 
-
+/* PRODUCTS SECTION */
 .products {
   margin-bottom: 60px;
 }
@@ -142,7 +142,7 @@ h1 {
   border-top: 8px solid #66d9eb;
 }
 
-
+/* PRICES SECTION */
 .prices-bg {
   background-color: #f7f7f7;
   padding: 60px;
@@ -207,8 +207,21 @@ h1 {
   color: #222;
   margin: 20px auto;
 }
+/* CHANGE ORDER OF THE PRICES ON MOBILE VERSION (FROM EXPENSIVE TO CHEAPER)*/
+@media (max-width: 600px) {
 
+  .prices-bg {
+    padding: 60px 10px;
+  }
+  .item-price:nth-child(3) {
+    order: -2;
+  }
+  .item-price:nth-child(2) {
+    order: -1;
+  }
+}
 
+/* QUALITY SECTION */
 .quality {
   display: flex;
   padding: 60px 0;
@@ -245,7 +258,7 @@ h1 {
   color: #7c7c7c;
 }
 
-
+/* NEWSLETTER SECTION */
 .newsletter {
   padding: 60px calc((100% - 960px) / 2);
   margin: 0 10px;
@@ -297,8 +310,15 @@ h1 {
   padding: 15px 10px;
   cursor: pointer;
 }
+/* DECREASE THE BUTTON FONT SIZE TO FIT BETTER ON MOBILE VERSION */
+@media (max-width: 600px) {
 
+  .newsletter-form button {
+    font-size: 1.5em;
+  }
+}
 
+/* FOOTER */
 .footer {
   background-color: #2c70ff;
   padding: 60px calc((100% - 960px) / 2);
