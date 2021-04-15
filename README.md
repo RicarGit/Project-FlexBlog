@@ -3,3 +3,8 @@ Things starting to get better now, lets move on!!!
 
 ----------------------------------------------------------------------------
 Creating a static webpage to practice flexbox!
+
+
+## Adding the final result of the pages on my projects!
+
+![](image/FlexBlog.jpg)
